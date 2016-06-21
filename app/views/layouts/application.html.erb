@@ -36,12 +36,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-            <div><h2><%= link_to "Steve", "/"  %></h2></div>
+            <div><h2><%= link_to "Steve", root_path  %></h2></div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-              <li><%= link_to "About", "pages/about"  %></li>
-              <li><%= link_to "Climbing", "pages/climbing"  %></li>
-              <li><%= link_to "Offroading", "pages/offroading"  %></li>
+              <li><%= link_to "About", pages_about_path  %></li>
+              <li><%= link_to "Climbing", pages_climbing_path  %></li>
+              <li><%= link_to "Offroading", pages_offroading_path  %></li>
+              <li><%= link_to "Images", images_path  %></li>
+              <li><%= link_to "Blog", pages_blog_path  %></li>
           </ul>
             <ul class="nav navbar-right col-md-4">
                 <% if current_user %>

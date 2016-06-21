@@ -11,4 +11,7 @@ class PagesController < ApplicationController
     
     def offroading
     end
+    
+    def blog
+    end
 end
