@@ -36,12 +36,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Steve Adamson</a>
+            <div><h2><%= link_to "Steve", "/"  %></h2></div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "About", "/path1"  %></li>
-            <li><%= link_to "Climbing", "/path2"  %></li>
-              <li><%= link_to "Offroading", "/path3"  %></li>
+              <li><%= link_to "About", "pages/about"  %></li>
+              <li><%= link_to "Climbing", "pages/climbing"  %></li>
+              <li><%= link_to "Offroading", "pages/offroading"  %></li>
           </ul>
             <ul class="nav navbar-right col-md-4">
                 <% if current_user %>
