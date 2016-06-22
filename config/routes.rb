@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :articles
-  devise_for :users
-  resources :images
+    
   root 'welcome#index'
+  devise_for :users  
+  resources :articles
+  resources :images
+  
   get 'pages/about', to: 'pages#about'
   get 'pages/climbing', to: 'pages#climbing'
   get 'pages/offroading', to: 'pages#offroading'
