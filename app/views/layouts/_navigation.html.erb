@@ -1,8 +1,7 @@
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
-        
+        <%= link_to "Home", root_path, class: "navbar-brand", id: "logo" %>
           <ul class="nav navbar-nav">
-              <li><%= link_to "Home", root_path, :class => "logo" %></li>
               <li><%= link_to "About", pages_about_path  %></li>
               <li><%= link_to "Climbing", pages_climbing_path  %></li>
               <li><%= link_to "Offroading", pages_offroading_path  %></li>
@@ -24,4 +23,4 @@
                 <% end %>
             </ul>
         </div>
-    </div>
+      </div>

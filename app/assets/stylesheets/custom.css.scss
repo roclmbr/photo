@@ -1,6 +1,9 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
+#logo {
+    font-size: 2em;
+    float: left;
+    color: black;
+    
+}
     
 .user-name {
     padding: 0 !important ;
@@ -71,6 +74,7 @@
     text-align: center;
     background-image: asset-url('mountain1.jpg');
     background-size: cover;
+    height: 600px;
     color: #fff;
     font-family: 'Helvetica Neue' !important;
     font-stretch: expanded;
