@@ -1,7 +1,10 @@
 <% if current_user %>
 
-<h3>Welcome: <%= current_user.email %></h3>
-
+    <% if current_user.name %>
+        <h3>Welcome: <%= current_user.name %></h3>
+    <% else %>
+        <h3>Welcome: <%= current_user.email %></h3>
+    <% end %>
 <% else %>
 
 <div class="jumbotron">
