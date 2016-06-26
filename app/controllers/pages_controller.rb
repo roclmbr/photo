@@ -14,4 +14,8 @@ class PagesController < ApplicationController
     
     def blog
     end
+    
+    def users
+        @users = User.all
+    end
 end

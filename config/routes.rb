@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get 'pages/about', to: 'pages#about'
   get 'pages/climbing', to: 'pages#climbing'
   get 'pages/offroading', to: 'pages#offroading'
-  get 'pages/blog', to: 'pages#blog'  
+  get 'pages/blog', to: 'pages#blog' 
+  get 'pages/users', to: 'pages#users'
+    
 end
