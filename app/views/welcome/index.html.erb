@@ -9,6 +9,7 @@
 <h4 align="center"><%= current_user.name %>'s articles</h4>
 
 <%= render 'articles/article', obj: current_user.articles %>
+
 <% else %>
 
 <div class="jumbotron">
