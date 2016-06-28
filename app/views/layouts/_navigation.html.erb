@@ -1,7 +1,7 @@
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <%= link_to "Home", root_path, class: "navbar-brand", id: "logo" %>
-          <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
               <li><%= link_to "About", pages_about_path  %></li>
               <li><%= link_to "Climbing", pages_climbing_path  %></li>
               <li><%= link_to "Offroading", pages_offroading_path  %></li>
@@ -9,9 +9,12 @@
               <li><%= link_to "Blog", pages_blog_path  %></li>
               <li><%= link_to "Articles", articles_path  %></li>
               <li><%= link_to "Users", pages_users_path  %></li>
-              
-          </ul>
-          <ul class="nav navbar-right col-md-4">
+              <li><%= link_to "All Categories", categories_path  %></li>
+                <% if current_user and current_user.admin? %>
+                    <li><%= link_to "Create New Category", new_category_path %></li>
+                <% end %>
+             </ul>
+            <ul class="nav navbar-right col-md-4">
                 <% if current_user %>
                 <li class="col-md-8 user-name">
                     <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe, edit_user_registration_path, title: 'Edit Profile' %>
