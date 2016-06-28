@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users  
   resources :articles
   resources :images
+  resources :categories, except: [:destroy]
   
   get 'pages/about', to: 'pages#about'
   get 'pages/climbing', to: 'pages#climbing'
