@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628232316) do
+ActiveRecord::Schema.define(version: 20160630125251) do
 
   create_table "article_categories", force: :cascade do |t|
     t.integer "article_id"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(version: 20160628232316) do
   end
 
   add_index "images", ["user_id"], name: "index_images_on_user_id"
+
+  create_table "stocks", force: :cascade do |t|
+    t.string   "ticker"
+    t.string   "name"
+    t.decimal  "last_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
