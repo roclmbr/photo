@@ -2,6 +2,8 @@
     "jscodehints.detectedExclusions": [
         "/var/www/photo/vendor/bundle/ruby/2.3.0/gems/less-2.6.0/lib/less/js/build/rhino-modules.js",
         "/var/www/photo/vendor/bundle/ruby/2.3.0/gems/less-2.6.0/lib/less/js/build/browser-header.js",
-        "/var/www/photo/vendor/bundle/ruby/2.3.0/gems/less-2.6.0/lib/less/js/dist/less-1.4.1.min.js"
+        "/var/www/photo/vendor/bundle/ruby/2.3.0/gems/less-2.6.0/lib/less/js/dist/less-1.4.1.min.js",
+        "/var/www/photo/vendor/bundle/ruby/2.3.0/gems/less-2.6.0/lib/less/js/dist/less-1.6.0.min.js",
+        "/var/www/photo/app/assets/javascripts/stocks.js"
     ]
 }
