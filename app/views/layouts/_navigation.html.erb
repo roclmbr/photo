@@ -2,32 +2,38 @@
       <div class="container">
         <%= link_to "Home", root_path, class: "navbar-brand", id: "logo" %>
             <ul class="nav navbar-nav">
-              <li><%= link_to "About", pages_about_path  %></li>
-              <li><%= link_to "Climbing", pages_climbing_path  %></li>
-              <li><%= link_to "Offroading", pages_offroading_path  %></li>
-              <li><%= link_to "Images", images_path  %></li>
-              <li><%= link_to "Blog", pages_blog_path  %></li>
-              <li><%= link_to "Articles", articles_path  %></li>
-              <li><%= link_to "Users", pages_users_path  %></li>
-              <li><%= link_to "All Categories", categories_path  %></li>
-                <% if current_user and current_user.admin? %>
-                    <li><%= link_to "Create New Category", new_category_path %></li>
-                <% end %>
-             </ul>
-            <ul class="nav navbar-right col-md-4">
+              <li><%= link_to "Rock Climbing", pages_rock_path  %></li>
+                <li><%= link_to "Ice Climbing", pages_ice_path  %></li>
+                <li><%= link_to "Images", images_path  %></li>
+                <li><%= link_to "Articles", articles_path  %></li>
+                <li><%= link_to "Users", pages_users_path  %></li>
+                <li><%= link_to "All Categories", categories_path  %></li>
                 <% if current_user %>
+                <li><%= link_to "Offroading", pages_offroading_path  %></li>
                 <li><%= link_to "My Portfolio", my_portfolio_path %></li>
                 <li><%= link_to "My Friends", my_friends_path %></li>
+                <% end %>
+                <% if current_user and current_user.admin? %>
+                    
+                    <li><%= link_to "Create New Category", new_category_path %></li>
+                <% end %>
+            </ul>
+          <% if current_user %>
+            <ul class="nav navbar-right col-md-4">
                 <li class="col-md-8 user-name">
                     <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.full_name ? current_user.full_name : current_user.email, length: 25)).html_safe, edit_user_registration_path, title: 'Edit Profile' %>
                 </li>
                 <li class="col-md-1"> </li>
                 <li class="col-md-3 logout"><%= link_to('Logout', destroy_user_session_path, class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
-                <% else %>
-                <li class="col-md-4 pull-right">
+          </ul>
+               <% else %>
+            <ul class="nav navbar-right col-md-4">
+                <li class="col-md-1"> </li>
+                <li class="col-md-4 signin">
                     <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
                 </li>
-                <% end %>
             </ul>
-        </div>
-      </div>
+               <% end %>
+            
+         </div>
+</div>
