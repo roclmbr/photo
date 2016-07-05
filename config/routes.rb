@@ -11,8 +11,8 @@ Rails.application.routes.draw do
     
   root 'welcome#index'
   
-  get 'pages/about', to: 'pages#about'
-  get 'pages/climbing', to: 'pages#climbing'
+  get 'pages/rock', to: 'pages#rock'
+    get 'pages/ice', to: 'pages#ice'
   get 'pages/offroading', to: 'pages#offroading'
   get 'pages/blog', to: 'pages#blog' 
   get 'pages/users', to: 'pages#users'

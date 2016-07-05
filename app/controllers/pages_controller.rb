@@ -1,19 +1,14 @@
 class PagesController < ApplicationController
+    skip_before_action :authenticate_user!, only: [:rock, :ice]
     
     def index
         
     end
     
-    def about
-    end
-    
-    def climbing
+    def ice
     end
     
     def offroading
-    end
-    
-    def blog
     end
     
     def users
