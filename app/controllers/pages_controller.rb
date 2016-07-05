@@ -19,4 +19,8 @@ class PagesController < ApplicationController
     def users
         @users = User.all
     end
+    
+    def rock
+        
+    end
 end
