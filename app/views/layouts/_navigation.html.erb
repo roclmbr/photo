@@ -6,10 +6,10 @@
                 <li><%= link_to "Ice Climbing", pages_ice_path  %></li>
                 <li><%= link_to "Images", images_path  %></li>
                 <li><%= link_to "Articles", articles_path  %></li>
-                <li><%= link_to "Users", pages_users_path  %></li>
-                <li><%= link_to "All Categories", categories_path  %></li>
                 <% if current_user %>
                 <li><%= link_to "Offroading", pages_offroading_path  %></li>
+                 <li><%= link_to "Users", pages_users_path  %></li>
+                <li><%= link_to "All Categories", categories_path  %></li>
                 <li><%= link_to "My Portfolio", my_portfolio_path %></li>
                 <li><%= link_to "My Friends", my_friends_path %></li>
                 <% end %>
