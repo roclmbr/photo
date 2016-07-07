@@ -11,14 +11,14 @@ Rails.application.routes.draw do
   resources :charges
     
   root 'welcome#index'
-<<<<<<< HEAD
+
   
   get 'pages/rock', to: 'pages#rock'
     get 'pages/ice', to: 'pages#ice'
-=======
+
   get 'pages/rock', to: 'pages#rock' 
   get 'pages/ice', to: 'pages#ice' 
->>>>>>> 905fb27daaa2c6c4d1d72e6aa7dc948cf5ebcc1d
+
   get 'pages/offroading', to: 'pages#offroading'
   get 'pages/blog', to: 'pages#blog' 
   get 'pages/users', to: 'pages#users'
